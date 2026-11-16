@@ -1,105 +1,126 @@
 # Week 9 – Miro text for The Neighbourhood Growing Table
 
-Paste each block into its own sticky note. The layout follows Kate's row:
-personas, then journey maps / storyboards, then prototype and explanation.
+Same layout as Kate's and Yina's rows: one hand-drawn sketch, then personas,
+journey map, and prototyping & explanations. Each block below is one sticky note.
 
-Assumed, please check: June is Ben's grandmother and Ruby is his mother;
-Ruby is 36 and Ben is 5 (only June's age, 68, was given).
+## Sketch
+
+Copy `sketch-template.png` onto paper by hand, photograph it and upload the photo.
+
+Note to place under the sketch:
+
+> **The Neighbourhood Growing Table**
+>
+> A raised growing table in a shared outdoor space. It has two growing bays and a shared worktop in the middle.
+>
+> The table is open underneath, so a person in a wheelchair can roll in and garden next to a child.
+>
+> On the worktop there are picture sliders that show what the plants need, a growing tips board and a harvest basket. Children, parents and older neighbours look after the same plants together.
 
 ## Personas
 
-**June Morgan (68) – Grandmother / older neighbour, wheelchair user**
+**Child (5 years)**
 
-Goal: Keep growing herbs and stay part of neighbourhood life without needing someone to help her.
+Goal: do a real gardening job by himself, like watering.
 
-Needs: Step-free access, space to roll right up to the table, plants and controls she can reach while seated, simple visual cues.
+Needs: plants at his height, pictures instead of words, a small watering can and an adult close by.
 
-Frustrations: Ground-level beds she cannot reach, narrow or uneven paths, having to ask others to do things for her, feeling like a spectator.
+Frustrations: cannot read signs yet, is often told "don't touch" and has to wait a long time for plants to grow.
 
-Motivation: Passing her growing knowledge on to her grandson and feeling useful in the community.
+Motivation: being trusted with a job and taking a herb home.
 
-**Ruby Morgan (36) – Parent / caregiver**
+**Parent (36 years)**
 
-Goal: Find a free, safe activity close to home that works for her son and her mother at the same time.
+Goal: find a free and safe activity close to home for her child and her own mother at the same time.
 
-Needs: Short drop-in visits, clear cues about what the plants need, child-safe tools, a space all three generations can use together.
+Needs: short drop-in visits, clear picture instructions and a space all three generations can use.
 
-Frustrations: Activities that suit only one age group, costs and booking, not knowing whether the plants have already been watered, little free time.
+Frustrations: most activities suit only one age group, cost money or need booking, and she has little free time.
 
-Motivation: Quality family time outdoors and seeing Ben learn where food comes from.
+Motivation: family time outdoors and seeing her child learn where food comes from.
 
-**Ben Morgan (5) – Child**
+**Older neighbour in a wheelchair (68 years)**
 
-Goal: Have fun outdoors and do a "real" job by himself, like watering.
+Goal: keep gardening and stay part of neighbourhood life.
 
-Needs: Things at his height, pictures instead of words, light child-sized tools, an adult close by.
+Needs: a step-free path, space to roll up to the table and plants she can reach while seated.
 
-Frustrations: Cannot read signs yet, tables and tools that are too high or heavy, being told "don't touch", waiting a long time for plants to grow.
+Frustrations: garden beds on the ground are too low to reach and she does not like asking for help.
 
-Motivation: Being trusted with a job, praise from Grandma June, taking a herb home.
+Motivation: sharing what she knows about growing with children and feeling useful.
 
-## Journey maps / storyboards
+## Journey map
 
-Upload the three images, one under each persona:
+| Step | Child (5 years) | Parent (36 years) | Older neighbour in a wheelchair (68 years) |
+| --- | --- | --- | --- |
+| 1 | **Discover** – Sees the growing table and the small watering can on the way home. Emotion: curious | **Discover** – Notices the growing table while walking home with her child. Emotion: interested | **Discover** – Sees the herbs on the table from the path. Emotion: curious |
+| 2 | **Approach** – Runs to the table with his mum and finds a spot at the side. Emotion: excited | **Check** – Sees that it is free, safe and open to everyone. Emotion: relieved | **Roll in** – Rolls up to the table. Her knees fit under the worktop. Emotion: welcomed |
+| 3 | **Water** – Looks at the water picture and waters the herbs with the small can. Emotion: proud | **Join in** – Stands next to her child and helps him water the plants. Emotion: relaxed | **Reach** – Reaches the plants and the sliders without standing up. Emotion: comfortable |
+| 4 | **Learn** – An older neighbour shows him a picture tip on the tips board. Emotion: interested | **Chat** – Talks to an older neighbour and reads a growing tip. Emotion: connected | **Teach** – Shows a child how to water and adds a tip to the tips board. Emotion: proud |
+| 5 | **Harvest** – Picks one herb, puts it in the basket and takes it home. Emotion: happy | **Leave** – Takes a few herbs for dinner and plans to come back. Emotion: satisfied | **Leave** – Rolls away and plans to come back tomorrow. Emotion: satisfied |
 
-1. June – existing page "1 of 3"
-2. Ruby – `storyboard-2-ruby.png`
-3. Ben – `storyboard-3-ben.png`
+## Prototyping & explanations
 
-Question to test on each page:
+**Prototype 1: The roll-under growing table**
 
-- June: Can she reach the slider while seated?
-- Ruby: Will she update the slider before she leaves?
-- Ben: Does he know what the water icon means?
+A raised table with two growing bays and open space underneath.
 
-## Prototype and explanation
+Purpose: let wheelchair users and children garden side by side at the same table.
 
-**Prototype – The Neighbourhood Growing Table**
+Test: can a seated adult roll in and reach the plants, and can a 5-year-old reach them too?
 
-A shared, table-height growing station with two growing bays, a shared worktop, picture sliders (Water / Check / Leave to grow), a growing-tips board and a harvest basket. The front is open underneath with a clear approach space, so a wheelchair user can roll in and work next to a child.
+**Prototype 2: The growing tips board**
 
-Purpose: Let children and older neighbours care for the same plants together, and show at a glance what the plants need next, without anyone having to read.
+A small board on the table with picture tip cards that neighbours can add to.
 
-Test: Can a seated adult reach the sliders, and does a 5-year-old understand what the water icon means?
+Purpose: help older neighbours share what they know with children and parents.
 
-## Prototyping Report Card – before prototyping
+Test: does a child understand a picture tip, and do visitors want to add their own?
+
+**Prototype 3: The shared harvest basket**
+
+A basket on the worktop with a simple picture rule: pick one, leave some.
+
+Purpose: let everyone who helped take something home, so families want to come back.
+
+Test: do visitors understand the rule and feel comfortable taking a herb?
+
+Yina's row already has the picture sliders as a prototype, so these three test other parts of the table.
+The sliders stay in the sketch as a feature.
+
+## For the seminar – Prototyping Report Card, before prototyping
 
 **Prototype name:** The Neighbourhood Growing Table
 
-**What is it?** A 1:1 cardboard mock-up of the front of the shared worktop: picture sliders, one growing bay, a watering can and the harvest basket.
+**What is it?** A 1:1 cardboard mock-up of the table front with one growing bay, the tips board and the harvest basket.
 
 **Top 3 learning questions**
 
-1. Can June roll in and reach the slider and the plants while seated?
-2. Does Ben understand the water icon without being told?
-3. Does Ruby update the slider before she leaves?
+1. Can a seated adult roll in and reach the plants, and can a 5-year-old reach them too?
+2. Does a child understand a picture tip without help?
+3. Do visitors understand "pick one, leave some" and feel comfortable taking a herb?
 
 **Key metrics for success**
 
-- The seated tester reaches the slider and the bay without standing up or asking for help (yes / no).
-- How many testers choose the right action from the icon alone (x out of y).
-- How many run-throughs end with the slider updated unprompted (x out of y).
-- How often testers ask "what do I do now?", plus their think-aloud comments.
+- The seated tester reaches the plants without standing up or asking for help (yes / no).
+- How many testers explain the picture tip correctly (x out of y).
+- How many testers take the right amount from the basket without being told (x out of y).
 
-**Testing method**
-
-Investigative rehearsal of the three storyboards, one teammate per persona (seated on a chair for June, kneeling for Ben). Then another team uses the mock-up while thinking aloud. One silent Wizard of Oz operator swaps the plant cards (dry, watered, ready to pick). One observer keeps a list of bugs, insights and ideas.
+**Testing method:** role play with one teammate per persona (seated on a chair for the older neighbour, kneeling for the child), then another team tries it while thinking aloud. One observer lists bugs, insights and ideas.
 
 **Assumptions**
 
-- There is a step-free communal space with a firm path and water nearby.
+- There is a step-free shared space with a firm path and water nearby.
 - The council or a community group pays for the table and looks after it.
 - Children visit with an adult, and neighbours of different ages visit often enough to share the care.
-- People trust the slider and keep it up to date.
 
 ## Recycled materials to bring
 
 | Part to build (1:1) | Material |
 | --- | --- |
-| Worktop front with a slot for the slider | Large cereal box or flattened cardboard |
-| Slider markers and the three icons | Bottle caps, marker pen |
-| Growing bay and seedlings | Egg carton, green paper |
-| Plant cards for the Wizard of Oz (dry / watered / ready) | Card from a tea or snack box |
+| Table front and worktop edge | Large cereal box or flattened cardboard |
+| Growing bay and plants | Egg carton, green paper |
+| Tips board and picture tip cards | Tea or snack box, marker pen |
+| Harvest basket with the picture rule | Snack box |
 | Small watering can | Small plastic bottle or cup |
-| Harvest basket and tips board | Snack box and its lid |
 | Wheelchair stand-in | An ordinary chair pushed up to the table |
