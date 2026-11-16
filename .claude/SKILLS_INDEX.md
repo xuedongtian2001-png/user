@@ -1,0 +1,750 @@
+# 已安装技能索引
+
+技能位于 `.claude/skills/<技能名>/`，在本仓库打开的 Claude Code 会话会自动加载。各来源的许可证见 `skill-licenses/`。
+
+## 来源汇总
+
+| 来源仓库 | 技能数 |
+|---|---|
+| [Galaxy-Dawn/claude-scholar](https://github.com/Galaxy-Dawn/claude-scholar) | 45 |
+| [zLanqing/codex-claude-academic-skills](https://github.com/zLanqing/codex-claude-academic-skills) | 3 |
+| [Adkid-Zephyr/anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill) | 2 |
+| [HughYau/AcademicForge](https://github.com/HughYau/AcademicForge) | 33 |
+| [AIScientists-Dev/academic-humanizer](https://github.com/AIScientists-Dev/academic-humanizer) | 1 |
+| [aipoch/medical-research-skills](https://github.com/aipoch/medical-research-skills) | 605 |
+| [hzwer/WritingAIPaper](https://github.com/hzwer/WritingAIPaper) | 1（由文档包装为 `writing-ai-paper`） |
+| [ahmetbersoz/chatgpt-prompts-for-academic-writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing) | 1（由文档包装为 `academic-writing-prompts`） |
+| [OpenNSWM-Lab/FAROS](https://github.com/OpenNSWM-Lab/FAROS) | 0 — 这是完整的 Web 应用（前后端 + 部署），不是技能，未安装 |
+
+## 安装说明
+
+- 子目录分类已展平为一级目录（Claude Code 只识别 `.claude/skills/<名>/SKILL.md`）。
+- 重名技能加了来源前缀（例如 `medical-research-skills-literature-review`），并同步修改了 SKILL.md 中的 `name`。
+- `codex-claude-academic-skills/scientific-toolkit-skill` 内部的子技能保留为其参考资料，不单独注册。
+- 只安装了 `claude-scholar` 的 skills，未安装它的 hooks/commands/agents。
+- 未复制 `.git`、`node_modules`、`__pycache__`，以及超过 10MB 的数据文件（如下）；用到这些技能时需从原仓库重新下载对应文件。
+
+### 跳过的大文件
+
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/ppi-network-analysis/references/string_cache/10090.protein.links.v11.5.txt.gz`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/ppi-network-analysis/references/string_cache/9606.protein.links.v11.5.txt.gz`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/ppi-network-analysis/references/string_cache/10090.protein.aliases.v11.5.txt.gz`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/ppi-network-analysis/references/string_cache/9606.protein.aliases.v11.5.txt.gz`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/gsva-analysis-and-visualization/tests/data/expr_matrix.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/cerna-analysis/references/database/miRDB_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/cerna-analysis/references/database/starbase_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/cerna-analysis/references/database/miRTarbase_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/lncrna-regulatory-network-construction-analysis/references/database/miRDB_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/lncrna-regulatory-network-construction-analysis/references/database/starbase_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/lncrna-regulatory-network-construction-analysis/references/database/miRTarbase_miRNA_mRNA.csv`
+- `medical-research-skills/awesome-med-research-skills/Data Analysis/ssgsea-immune-infiltration-analysis/tests/data/expression_matrix.csv`
+
+## 技能列表
+
+### Galaxy-Dawn/claude-scholar
+
+- `agent-identifier` ← `skills/agent-identifier`
+- `architecture-design` ← `skills/architecture-design`
+- `bug-detective` ← `skills/bug-detective`
+- `citation-verification` ← `skills/citation-verification`
+- `code-review-excellence` ← `skills/code-review-excellence`
+- `command-development` ← `skills/command-development`
+- `daily-coding` ← `skills/daily-coding`
+- `daily-paper-generator` ← `skills/daily-paper-generator`
+- `defuddle` ← `skills/defuddle`
+- `doc-coauthoring` ← `skills/doc-coauthoring`
+- `expression-skill` ← `skills/expression-skill`
+- `frontend-design` ← `skills/frontend-design`
+- `git-workflow` ← `skills/git-workflow`
+- `hook-development` ← `skills/hook-development`
+- `kaggle-learner` ← `skills/kaggle-learner`
+- `latex-conference-template-organizer` ← `skills/latex-conference-template-organizer`
+- `mcp-integration` ← `skills/mcp-integration`
+- `ml-paper-writing` ← `skills/ml-paper-writing`
+- `nature-data` ← `skills/nature-data`
+- `nature-polishing` ← `skills/nature-polishing`
+- `nature-response` ← `skills/nature-response`
+- `nature-writing` ← `skills/nature-writing`
+- `obsidian-kb-artifacts` ← `skills/obsidian-kb-artifacts`
+- `obsidian-literature-workflow` ← `skills/obsidian-literature-workflow`
+- `obsidian-project-kb-core` ← `skills/obsidian-project-kb-core`
+- `obsidian-source-ingestion` ← `skills/obsidian-source-ingestion`
+- `paper-self-review` ← `skills/paper-self-review`
+- `planning-with-files` ← `skills/planning-with-files`
+- `plugin-structure` ← `skills/plugin-structure`
+- `post-acceptance` ← `skills/post-acceptance`
+- `publication-chart-skill` ← `skills/publication-chart-skill`
+- `research-ideation` ← `skills/research-ideation`
+- `results-analysis` ← `skills/results-analysis`
+- `results-report` ← `skills/results-report`
+- `review-response` ← `skills/review-response`
+- `skill-development` ← `skills/skill-development`
+- `skill-improver` ← `skills/skill-improver`
+- `skill-quality-reviewer` ← `skills/skill-quality-reviewer`
+- `ui-ux-pro-max` ← `skills/ui-ux-pro-max`
+- `uv-package-manager` ← `skills/uv-package-manager`
+- `verification-loop` ← `skills/verification-loop`
+- `web-design-reviewer` ← `skills/web-design-reviewer`
+- `webapp-testing` ← `skills/webapp-testing`
+- `writing-anti-ai` ← `skills/writing-anti-ai`
+- `zotero-obsidian-bridge` ← `skills/zotero-obsidian-bridge`
+
+### zLanqing/codex-claude-academic-skills
+
+- `office-academic-skill` ← `office-academic-skill`
+- `research-writing-skill` ← `research-writing-skill`
+- `scientific-toolkit-skill` ← `scientific-toolkit-skill`
+
+### Adkid-Zephyr/anti-defensive-writing-Skill
+
+- `anti-defensive-writing` ← `skills/anti-defensive-writing`
+- `anti-defensive-writing-en` ← `skills/anti-defensive-writing-en`
+
+### HughYau/AcademicForge
+
+- `algorithmic-art` ← `skills/claude-science/algorithmic-art`
+- `alphafold2` ← `skills/claude-science/alphafold2`
+- `boltz` ← `skills/claude-science/boltz`
+- `borzoi` ← `skills/claude-science/borzoi`
+- `chai1` ← `skills/claude-science/chai1`
+- `compute-env-setup` ← `skills/claude-science/compute-env-setup`
+- `customize` ← `skills/claude-science/customize`
+- `diffdock` ← `skills/claude-science/diffdock`
+- `esmfold2` ← `skills/claude-science/esmfold2`
+- `evo2` ← `skills/claude-science/evo2`
+- `fair-esm2` ← `skills/claude-science/fair-esm2`
+- `figure-composer` ← `skills/claude-science/figure-composer`
+- `figure-style` ← `skills/claude-science/figure-style`
+- `indication-dossier` ← `skills/claude-science/indication-dossier`
+- `learn` ← `skills/claude-science/learn`
+- `ligandmpnn` ← `skills/claude-science/ligandmpnn`
+- `literature-review` ← `skills/claude-science/literature-review`
+- `managed-model-endpoints` ← `skills/claude-science/managed-model-endpoints`
+- `openfold3` ← `skills/claude-science/openfold3`
+- `paper-narrative` ← `skills/claude-science/paper-narrative`
+- `pdf-explore` ← `skills/claude-science/pdf-explore`
+- `product-self-knowledge` ← `skills/claude-science/product-self-knowledge`
+- `proteinmpnn` ← `skills/claude-science/proteinmpnn`
+- `remote-compute-modal` ← `skills/claude-science/remote-compute-modal`
+- `remote-compute-ssh` ← `skills/claude-science/remote-compute-ssh`
+- `scgpt` ← `skills/claude-science/scgpt`
+- `scientific-visualization` ← `skills/scientific-visualization`
+- `scvi-tools` ← `skills/claude-science/scvi-tools`
+- `self-awareness` ← `skills/claude-science/self-awareness`
+- `skill-creator` ← `skills/claude-science/skill-creator`
+- `solublempnn` ← `skills/claude-science/solublempnn`
+- `using-model-endpoint` ← `skills/claude-science/using-model-endpoint`
+- `web-artifacts-builder` ← `skills/claude-science/web-artifacts-builder`
+
+### AIScientists-Dev/academic-humanizer
+
+- `academic-humanizer` ← `.`
+
+### aipoch/medical-research-skills
+
+- `3d-molecule-ray-tracer` ← `scientific-skills/Data Analysis/3d-molecule-ray-tracer`
+- `abstract-summarizer` ← `scientific-skills/Academic Writing/abstract-summarizer`
+- `abstract-trimmer` ← `scientific-skills/Academic Writing/abstract-trimmer`
+- `academic-abstract-refiner` ← `scientific-skills/Academic Writing/academic-abstract-refiner`
+- `academic-cv-generator` ← `scientific-skills/Other/academic-cv-generator`
+- `academic-highlight-generator` ← `scientific-skills/Academic Writing/academic-highlight-generator`
+- `academic-norm-review` ← `scientific-skills/Other/academic-norm-review`
+- `academic-poster-generator` ← `scientific-skills/Other/academic-poster-generator`
+- `acronym-unpacker` ← `scientific-skills/Evidence Insight/acronym-unpacker`
+- `active-comparator-single-soc-faers-safety-comparison` ← `awesome-med-research-skills/Protocol Design/active-comparator-single-soc-faers-safety-comparison`
+- `adaptive-trial-simulator` ← `scientific-skills/Protocol Design/adaptive-trial-simulator`
+- `adaptyv` ← `scientific-skills/Other/adaptyv`
+- `adme-property-predictor` ← `scientific-skills/Data Analysis/adme-property-predictor`
+- `adverse-event-narrative` ← `scientific-skills/Academic Writing/adverse-event-narrative`
+- `aim-and-hypothesis-designer` ← `awesome-med-research-skills/Protocol Design/aim-and-hypothesis-designer`
+- `alphafold-db` ← `scientific-skills/Evidence Insight/alphafold-db`
+- `anatomy-quiz-master` ← `scientific-skills/Academic Writing/anatomy-quiz-master`
+- `animal-and-cell-validation-planner` ← `awesome-med-research-skills/Protocol Design/animal-and-cell-validation-planner`
+- `anki-card-creator` ← `scientific-skills/Academic Writing/anki-card-creator`
+- `anndata` ← `scientific-skills/Data Analysis/anndata`
+- `api-design-principles` ← `scientific-skills/Other/api-design-principles`
+- `arboreto` ← `scientific-skills/Evidence Insight/arboreto`
+- `article-format-adjustment` ← `scientific-skills/Other/article-format-adjustment`
+- `arxiv-database` ← `scientific-skills/Evidence Insight/arxiv-database`
+- `arxiv-preflight` ← `awesome-med-research-skills/Academic Writing/arxiv-preflight`
+- `author-response-builder` ← `awesome-med-research-skills/Academic Writing/author-response-builder`
+- `authorship-credit-gen` ← `scientific-skills/Academic Writing/authorship-credit-gen`
+- `automated-soap-note-generator` ← `scientific-skills/Academic Writing/automated-soap-note-generator`
+- `baseline-extraction-for-clinical-trials` ← `scientific-skills/Data Analysis/baseline-extraction-for-clinical-trials`
+- `basic-discovery-translational-opportunity-finder` ← `awesome-med-research-skills/Evidence Insight/basic-discovery-translational-opportunity-finder`
+- `basic-research-design` ← `scientific-skills/Protocol Design/basic-research-design`
+- `batch-effect-correction` ← `awesome-med-research-skills/Data Analysis/batch-effect-correction`
+- `benchling-integration` ← `scientific-skills/Other/benchling-integration`
+- `bianque` ← `awesome-med-research-skills/Other/bianque`
+- `bib-formatter` ← `scientific-skills/Other/bib-formatter`
+- `bibliography` ← `scientific-skills/Other/bibliography`
+- `bidirectional-multi-phenotype-mr-research-planner` ← `awesome-med-research-skills/Protocol Design/bidirectional-multi-phenotype-mr-research-planner`
+- `bio-causal-genomics-mediation-analysis` ← `scientific-skills/Data Analysis/bio-causal-genomics-mediation-analysis`
+- `bio-causal-genomics-pleiotropy-detection` ← `scientific-skills/Data Analysis/bio-causal-genomics-pleiotropy-detection`
+- `bio-ontology-mapper` ← `scientific-skills/Evidence Insight/bio-ontology-mapper`
+- `biodbnet-api` ← `scientific-skills/Other/biodbnet-api`
+- `biogrid-orcs` ← `scientific-skills/Evidence Insight/biogrid-orcs`
+- `bioinfo-analysis-plan` ← `scientific-skills/Protocol Design/bioinfo-analysis-plan`
+- `bioinformatics-translational-opportunity-finder` ← `awesome-med-research-skills/Evidence Insight/bioinformatics-translational-opportunity-finder`
+- `biomarker-landscape-scanner` ← `awesome-med-research-skills/Evidence Insight/biomarker-landscape-scanner`
+- `biomed-outline-generator` ← `scientific-skills/Academic Writing/biomed-outline-generator`
+- `biomedical-search-strategy-builder` ← `awesome-med-research-skills/Evidence Insight/biomedical-search-strategy-builder`
+- `biopython` ← `scientific-skills/Data Analysis/biopython`
+- `biopython-advanced` ← `scientific-skills/Data Analysis/biopython-advanced`
+- `biopython-alignment` ← `scientific-skills/Data Analysis/biopython-alignment`
+- `biopython-entrez` ← `scientific-skills/Evidence Insight/biopython-entrez`
+- `biopython-phylo` ← `scientific-skills/Data Analysis/biopython-phylo`
+- `biopython-sequence-io` ← `scientific-skills/Data Analysis/biopython-sequence-io`
+- `biopython-structure` ← `scientific-skills/Data Analysis/biopython-structure`
+- `biorxiv-database` ← `scientific-skills/Evidence Insight/biorxiv-database`
+- `bioservices` ← `scientific-skills/Data Analysis/bioservices`
+- `biotech-pitch-deck-narrative` ← `scientific-skills/Academic Writing/biotech-pitch-deck-narrative`
+- `blind-review-sanitizer` ← `scientific-skills/Academic Writing/blind-review-sanitizer`
+- `blockbuster-therapy-predictor` ← `scientific-skills/Evidence Insight/blockbuster-therapy-predictor`
+- `bmi-bsa-calculator` ← `scientific-skills/Other/bmi-bsa-calculator`
+- `brainstorming` ← `scientific-skills/Other/brainstorming`
+- `brenda-database` ← `scientific-skills/Evidence Insight/brenda-database`
+- `buffer-calculator` ← `scientific-skills/Other/buffer-calculator`
+- `bulk-omics-integrative-planner` ← `awesome-med-research-skills/Protocol Design/bulk-omics-integrative-planner`
+- `case-control-study-planner` ← `awesome-med-research-skills/Protocol Design/case-control-study-planner`
+- `case-control-study-quality-assessment-nos` ← `scientific-skills/Data Analysis/Case-control-study-quality-assessment-nos`
+- `cellosaurus-api` ← `scientific-skills/Evidence Insight/cellosaurus-api`
+- `cellxgene-census` ← `scientific-skills/Evidence Insight/cellxgene-census`
+- `cerna-analysis` ← `awesome-med-research-skills/Data Analysis/cerna-analysis`
+- `chart-style-unifier` ← `scientific-skills/Other/chart-style-unifier`
+- `chea-api` ← `scientific-skills/Evidence Insight/chea-api`
+- `chembl-database` ← `scientific-skills/Evidence Insight/chembl-database`
+- `chemical-storage-sorter` ← `scientific-skills/Other/chemical-storage-sorter`
+- `chemical-structure-converter` ← `scientific-skills/Other/chemical-structure-converter`
+- `cibersort-immune-infiltration-analysis` ← `awesome-med-research-skills/Data Analysis/cibersort-immune-infiltration-analysis`
+- `circos-plot-generator` ← `scientific-skills/Data Analysis/circos-plot-generator`
+- `citation-chasing-mapping` ← `scientific-skills/Evidence Insight/citation-chasing-mapping`
+- `citation-formatter` ← `scientific-skills/Academic Writing/citation-formatter`
+- `citation-management` ← `scientific-skills/Evidence Insight/citation-management`
+- `citation-network` ← `scientific-skills/Evidence Insight/citation-network`
+- `claim-strength-calibrator` ← `awesome-med-research-skills/Academic Writing/claim-strength-calibrator`
+- `clinic-research-design` ← `scientific-skills/Protocol Design/clinic-research-design`
+- `clinic-sample-size` ← `scientific-skills/Other/clinic-sample-size`
+- `clinical-cohort-protocol-designer` ← `awesome-med-research-skills/Protocol Design/clinical-cohort-protocol-designer`
+- `clinical-data-cleaner` ← `scientific-skills/Data Analysis/clinical-data-cleaner`
+- `clinical-decision-support` ← `scientific-skills/Academic Writing/clinical-decision-support`
+- `clinical-diagnostic-reasoning` ← `scientific-skills/Other/clinical-diagnostic-reasoning`
+- `clinical-question-clarifier` ← `awesome-med-research-skills/Evidence Insight/clinical-question-clarifier`
+- `clinical-reports` ← `scientific-skills/Other/clinical-reports`
+- `clinical-study-info-extractor` ← `scientific-skills/Evidence Insight/clinical-study-info-extractor`
+- `clinical-trial-finder` ← `scientific-skills/Evidence Insight/clinical-trial-finder`
+- `clinical-trial-protocol-skill` ← `scientific-skills/Protocol Design/clinical-trial-protocol-skill`
+- `clinicaltrials-database` ← `scientific-skills/Evidence Insight/clinicaltrials-database`
+- `clinicaltrials-db` ← `scientific-skills/Evidence Insight/clinicaltrials-db`
+- `clinicaltrials-gov-parser` ← `scientific-skills/Evidence Insight/clinicaltrials-gov-parser`
+- `clinpgx-database` ← `scientific-skills/Evidence Insight/clinpgx-database`
+- `clinvar-database` ← `scientific-skills/Evidence Insight/clinvar-database`
+- `cnv-caller-plotter` ← `scientific-skills/Data Analysis/cnv-caller-plotter`
+- `co2-tank-monitor` ← `scientific-skills/Other/co2-tank-monitor`
+- `cobrapy` ← `scientific-skills/Data Analysis/cobrapy`
+- `code-refactor-for-reproducibility` ← `scientific-skills/Data Analysis/code-refactor-for-reproducibility`
+- `cohort-study-quality-assessment-nos` ← `scientific-skills/Data Analysis/cohort-study-quality-assessment-nos`
+- `cold-chain-risk-calculator` ← `scientific-skills/Other/cold-chain-risk-calculator`
+- `comorbidity-common-immune-biomarker-research-planner` ← `awesome-med-research-skills/Protocol Design/comorbidity-common-immune-biomarker-research-planner`
+- `comparative-network-toxicology-shared-mechanism-reference-grounded` ← `awesome-med-research-skills/Protocol Design/comparative-network-toxicology-shared-mechanism-reference-grounded`
+- `comparison-table-gen` ← `scientific-skills/Evidence Insight/comparison-table-gen`
+- `competitor-trial-monitor` ← `scientific-skills/Evidence Insight/competitor-trial-monitor`
+- `concept-explainer` ← `scientific-skills/Evidence Insight/concept-explainer`
+- `conference-abstract-adaptor` ← `scientific-skills/Academic Writing/conference-abstract-adaptor`
+- `conference-abstract-writer` ← `awesome-med-research-skills/Academic Writing/conference-abstract-writer`
+- `conference-poster-pitch` ← `scientific-skills/Academic Writing/conference-poster-pitch`
+- `conference-tweet-generator` ← `scientific-skills/Other/conference-tweet-generator`
+- `conflict-of-interest-checker` ← `scientific-skills/Other/conflict-of-interest-checker`
+- `confounder-and-bias-control-planner` ← `awesome-med-research-skills/Protocol Design/confounder-and-bias-control-planner`
+- `consensus-clustering-analysis` ← `awesome-med-research-skills/Data Analysis/consensus-clustering-analysis`
+- `consistency-checker-across-manuscript` ← `awesome-med-research-skills/Academic Writing/consistency-checker-across-manuscript`
+- `content-proofreading` ← `scientific-skills/Other/content-proofreading`
+- `contradictory-findings-resolver` ← `awesome-med-research-skills/Evidence Insight/contradictory-findings-resolver`
+- `conventional-non-oncology-hub-gene-research-planner` ← `awesome-med-research-skills/Protocol Design/conventional-non-oncology-hub-gene-research-planner`
+- `conventional-oncology-hub-gene-research-planner` ← `awesome-med-research-skills/Protocol Design/conventional-oncology-hub-gene-research-planner`
+- `cosmic-database` ← `scientific-skills/Evidence Insight/cosmic-database`
+- `cover-letter-drafter` ← `scientific-skills/Academic Writing/cover-letter-drafter`
+- `cover-letter-generator` ← `scientific-skills/Academic Writing/cover-letter-generator`
+- `crispr-screen-analyzer` ← `scientific-skills/Data Analysis/crispr-screen-analyzer`
+- `cross-disciplinary-bridge-finder` ← `scientific-skills/Evidence Insight/cross-disciplinary-bridge-finder`
+- `cross-disease-shared-biomarker-network-research-planner` ← `awesome-med-research-skills/Protocol Design/cross-disease-shared-biomarker-network-research-planner`
+- `crossref-database` ← `scientific-skills/Evidence Insight/crossref-database`
+- `ctd-api` ← `scientific-skills/Evidence Insight/ctd-api`
+- `data-stats-analysis` ← `scientific-skills/Data Analysis/data-stats-analysis`
+- `data-transform` ← `scientific-skills/Data Analysis/data-transform`
+- `datamol` ← `scientific-skills/Other/datamol`
+- `date-calculator` ← `scientific-skills/Other/date-calculator`
+- `decision-curve-analysis` ← `awesome-med-research-skills/Data Analysis/decision-curve-analysis`
+- `decision-tree-analysis` ← `awesome-med-research-skills/Data Analysis/decision-tree-analysis`
+- `deeptools` ← `scientific-skills/Data Analysis/deeptools`
+- `deg-screening-analysis` ← `awesome-med-research-skills/Data Analysis/deg-screening-analysis`
+- `dei-statement-drafter` ← `scientific-skills/Academic Writing/dei-statement-drafter`
+- `diagnostic-study-quality-assessment-quadas-2` ← `scientific-skills/Data Analysis/diagnostic-study-quality-assessment-quadas-2`
+- `dicom-anonymizer` ← `scientific-skills/Other/dicom-anonymizer`
+- `diffdock-molecular-docking` ← `scientific-skills/Evidence Insight/diffdock-molecular-docking`
+- `differential-expression-analysis` ← `awesome-med-research-skills/Data Analysis/differential-expression-analysis`
+- `digital-twin-discharge-drafter` ← `scientific-skills/Academic Writing/digital-twin-discharge-drafter`
+- `discharge-summary-writer` ← `scientific-skills/Academic Writing/discharge-summary-writer`
+- `discussion-composer` ← `awesome-med-research-skills/Academic Writing/discussion-composer`
+- `discussion-section-architect` ← `scientific-skills/Academic Writing/discussion-section-architect`
+- `disease-mechanism-evidence-map` ← `awesome-med-research-skills/Evidence Insight/disease-mechanism-evidence-map`
+- `dnanexus-integration` ← `scientific-skills/Data Analysis/dnanexus-integration`
+- `docx-feedback-tracker` ← `scientific-skills/Other/docx-feedback-tracker`
+- `dpi-upscaler-checker` ← `scientific-skills/Other/dpi-upscaler-checker`
+- `drug-interaction-checker` ← `scientific-skills/Evidence Insight/drug-interaction-checker`
+- `drug-repurposing-study-planner` ← `awesome-med-research-skills/Protocol Design/drug-repurposing-study-planner`
+- `drug-target-evidence-landscape` ← `awesome-med-research-skills/Evidence Insight/drug-target-evidence-landscape`
+- `drugbank-database` ← `scientific-skills/Evidence Insight/drugbank-database`
+- `dual-disease-shared-transcriptome-biomarker-research-planner` ← `awesome-med-research-skills/Protocol Design/dual-disease-shared-transcriptome-biomarker-research-planner`
+- `dual-disease-transcriptomic-ml-planner` ← `scientific-skills/Protocol Design/dual-disease-transcriptomic-ml-planner`
+- `ebm-calculator` ← `scientific-skills/Other/ebm-calculator`
+- `ectd-xml-compiler` ← `scientific-skills/Academic Writing/ectd-xml-compiler`
+- `ehr-semantic-compressor` ← `scientific-skills/Academic Writing/ehr-semantic-compressor`
+- `elastic-net-feature-selection` ← `awesome-med-research-skills/Data Analysis/elastic-net-feature-selection`
+- `emerging-topic-scout` ← `scientific-skills/Evidence Insight/emerging-topic-scout`
+- `ena-database` ← `scientific-skills/Evidence Insight/ena-database`
+- `encode-api` ← `scientific-skills/Evidence Insight/encode-api`
+- `encori-api` ← `scientific-skills/Evidence Insight/encori-api`
+- `endpoint-definition-designer` ← `awesome-med-research-skills/Protocol Design/endpoint-definition-designer`
+- `ensembl-database` ← `scientific-skills/Evidence Insight/ensembl-database`
+- `epidemiology` ← `scientific-skills/Data Analysis/epidemiology`
+- `equipment-maintenance-log` ← `scientific-skills/Other/equipment-maintenance-log`
+- `esm` ← `scientific-skills/Protocol Design/esm`
+- `estimate-immune-score-analysis` ← `awesome-med-research-skills/Data Analysis/estimate-immune-score-analysis`
+- `etetoolkit` ← `scientific-skills/Data Analysis/etetoolkit`
+- `evidence-level-ranker` ← `awesome-med-research-skills/Evidence Insight/evidence-level-ranker`
+- `experiment-design` ← `scientific-skills/Protocol Design/experiment-design`
+- `experiment-detail-comparator` ← `scientific-skills/Other/experiment-detail-comparator`
+- `experimental-data-analysis` ← `scientific-skills/Data Analysis/experimental-data-analysis`
+- `expert-interview-generator` ← `scientific-skills/Other/expert-interview-generator`
+- `expert-interview-topics` ← `scientific-skills/Other/expert-interview-topics`
+- `exploratory-data-analysis` ← `scientific-skills/Data Analysis/exploratory-data-analysis`
+- `external-model-validation` ← `awesome-med-research-skills/Data Analysis/external-model-validation`
+- `facs-gating-viz-style` ← `scientific-skills/Data Analysis/facs-gating-viz-style`
+- `faers-multi-drug-soc-planner` ← `scientific-skills/Protocol Design/faers-multi-drug-soc-planner`
+- `faers-pharmacovigilance-disproportionality-research-planner` ← `awesome-med-research-skills/Protocol Design/faers-pharmacovigilance-disproportionality-research-planner`
+- `faq-generator` ← `scientific-skills/Academic Writing/faq-generator`
+- `fastqc-report-interpreter` ← `scientific-skills/Data Analysis/fastqc-report-interpreter`
+- `fda-database` ← `scientific-skills/Evidence Insight/fda-database`
+- `fda-guideline-search` ← `scientific-skills/Evidence Insight/fda-guideline-search`
+- `feasibility-aware-study-planner` ← `awesome-med-research-skills/Protocol Design/feasibility-aware-study-planner`
+- `figure-first-paper-reader` ← `awesome-med-research-skills/Evidence Insight/figure-first-paper-reader`
+- `figure-legend-gen` ← `scientific-skills/Academic Writing/figure-legend-gen`
+- `figure-legend-writer` ← `awesome-med-research-skills/Academic Writing/figure-legend-writer`
+- `figure-reference-checker` ← `scientific-skills/Academic Writing/figure-reference-checker`
+- `file-management` ← `scientific-skills/Other/file-management`
+- `file-search` ← `scientific-skills/Other/file-search`
+- `file-security-toolkit` ← `scientific-skills/Other/file-security-toolkit`
+- `find-paper-references` ← `scientific-skills/Academic Writing/find-paper-references`
+- `flowio` ← `scientific-skills/Data Analysis/flowio`
+- `forest-plot-styler` ← `scientific-skills/Data Analysis/forest-plot-styler`
+- `format-references-endnote` ← `scientific-skills/Academic Writing/format-references-endnote`
+- `format-references-zotero` ← `scientific-skills/Academic Writing/format-references-zotero`
+- `fulltext-fetcher` ← `scientific-skills/Other/fulltext-fetcher`
+- `funding-trend-forecaster` ← `scientific-skills/Evidence Insight/funding-trend-forecaster`
+- `gene-database` ← `scientific-skills/Evidence Insight/gene-database`
+- `gene-info` ← `scientific-skills/Evidence Insight/gene-info`
+- `gene-protein-expression-matrix-normalization` ← `awesome-med-research-skills/Data Analysis/gene-protein-expression-matrix-normalization`
+- `gene-structure-mapper` ← `scientific-skills/Data Analysis/gene-structure-mapper`
+- `generic-phenotype-scoring-research-planner` ← `awesome-med-research-skills/Protocol Design/generic-phenotype-scoring-research-planner`
+- `geniml` ← `scientific-skills/Data Analysis/geniml`
+- `geo-search-api` ← `scientific-skills/Evidence Insight/geo-search-api`
+- `geopandas` ← `scientific-skills/Data Analysis/geopandas`
+- `gget` ← `scientific-skills/Evidence Insight/gget`
+- `gokegg` ← `awesome-med-research-skills/Data Analysis/gokegg`
+- `grant-budget-justification` ← `scientific-skills/Academic Writing/grant-budget-justification`
+- `grant-funding-scout` ← `scientific-skills/Evidence Insight/grant-funding-scout`
+- `grant-gantt-chart-gen` ← `scientific-skills/Evidence Insight/grant-gantt-chart-gen`
+- `grant-mock-reviewer` ← `scientific-skills/Academic Writing/grant-mock-reviewer`
+- `grant-proposal-assistant` ← `scientific-skills/Academic Writing/grant-proposal-assistant`
+- `grant-specific-aims-writer` ← `awesome-med-research-skills/Academic Writing/grant-specific-aims-writer`
+- `graph-interpretation` ← `scientific-skills/Academic Writing/graph-interpretation`
+- `graphical-abstract-generator` ← `awesome-med-research-skills/Academic Writing/graphical-abstract-generator`
+- `graphical-abstract-wizard` ← `scientific-skills/Data Analysis/graphical-abstract-wizard`
+- `gsea` ← `awesome-med-research-skills/Data Analysis/gsea`
+- `gsva-analysis-and-visualization` ← `awesome-med-research-skills/Data Analysis/gsva-analysis-and-visualization`
+- `gtars` ← `scientific-skills/Data Analysis/gtars`
+- `gwas-database` ← `scientific-skills/Evidence Insight/gwas-database`
+- `heatmap-beautifier` ← `scientific-skills/Data Analysis/heatmap-beautifier`
+- `hgnc-api` ← `scientific-skills/Evidence Insight/hgnc-api`
+- `hierarchical-clustering-plot` ← `awesome-med-research-skills/Data Analysis/hierarchical-clustering-plot`
+- `high-value-paper-screener` ← `awesome-med-research-skills/Evidence Insight/high-value-paper-screener`
+- `hipaa-compliance-auditor` ← `scientific-skills/Academic Writing/hipaa-compliance-auditor`
+- `hippocrates` ← `scientific-skills/Other/hippocrates`
+- `histolab` ← `scientific-skills/Data Analysis/histolab`
+- `hmdb-database` ← `scientific-skills/Evidence Insight/hmdb-database`
+- `html-to-pdf` ← `scientific-skills/Other/html-to-pdf`
+- `hypogenic` ← `scientific-skills/Protocol Design/hypogenic`
+- `hypothesis-generation` ← `scientific-skills/Protocol Design/hypothesis-generation`
+- `iacuc-protocol-drafter` ← `scientific-skills/Academic Writing/iacuc-protocol-drafter`
+- `ib-summarizer` ← `scientific-skills/Evidence Insight/ib-summarizer`
+- `icd10-cpt-coding-assistant` ← `scientific-skills/Other/icd10-cpt-coding-assistant`
+- `id-photo-tool` ← `scientific-skills/Other/id-photo-tool`
+- `image-ocr` ← `scientific-skills/Other/image-ocr`
+- `image-processing` ← `scientific-skills/Other/image-processing`
+- `imagegenskill` ← `scientific-skills/Other/imagegenskill`
+- `immune-pathway-analysis` ← `awesome-med-research-skills/Data Analysis/immune-pathway-analysis`
+- `inclusion-criteria-gen` ← `scientific-skills/Protocol Design/inclusion-criteria-gen`
+- `inclusion-exclusion-criteria-builder` ← `awesome-med-research-skills/Protocol Design/inclusion-exclusion-criteria-builder`
+- `inplasy-registration-helper` ← `scientific-skills/Protocol Design/INPLASY-registration-helper`
+- `introduction-logic-builder` ← `awesome-med-research-skills/Academic Writing/introduction-logic-builder`
+- `introduction-section-writer` ← `awesome-med-research-skills/Academic Writing/introduction-section-writer`
+- `irb-application-assistant` ← `scientific-skills/Academic Writing/irb-application-assistant`
+- `iso-13485-certification` ← `scientific-skills/Other/iso-13485-certification`
+- `jaspar-api` ← `scientific-skills/Evidence Insight/jaspar-api`
+- `journal-club-presenter` ← `scientific-skills/Academic Writing/journal-club-presenter`
+- `journal-cover-prompter` ← `scientific-skills/Academic Writing/journal-cover-prompter`
+- `journal-impact-factor-trend` ← `scientific-skills/Evidence Insight/journal-impact-factor-trend`
+- `journal-latest-issue` ← `scientific-skills/Evidence Insight/journal-latest-issue`
+- `journal-matchmaker` ← `scientific-skills/Evidence Insight/journal-matchmaker`
+- `journal-recommender` ← `scientific-skills/Other/journal-recommender`
+- `journal-skills` ← `scientific-skills/Evidence Insight/journal-skills`
+- `kegg-api` ← `scientific-skills/Evidence Insight/kegg-api`
+- `kegg-database` ← `scientific-skills/Evidence Insight/kegg-database`
+- `key-takeaways` ← `scientific-skills/Evidence Insight/key-takeaways`
+- `keyword-velocity-tracker` ← `scientific-skills/Evidence Insight/keyword-velocity-tracker`
+- `km-survival-curve` ← `awesome-med-research-skills/Data Analysis/km-survival-curve`
+- `knn-imputation` ← `awesome-med-research-skills/Data Analysis/knn-imputation`
+- `knowledge-base-search` ← `scientific-skills/Other/knowledge-base-search`
+- `kv-design` ← `scientific-skills/Other/kv-design`
+- `lab-budget-forecaster` ← `scientific-skills/Data Analysis/lab-budget-forecaster`
+- `lab-inventory-predictor` ← `scientific-skills/Other/lab-inventory-predictor`
+- `lab-prep-calculations` ← `scientific-skills/Other/Lab-Prep-Calculations`
+- `lab-result-interpretation` ← `scientific-skills/Other/lab-result-interpretation`
+- `labarchive-integration` ← `scientific-skills/Academic Writing/labarchive-integration`
+- `lamindb` ← `scientific-skills/Data Analysis/lamindb`
+- `lasso-logistics-analysis` ← `awesome-med-research-skills/Data Analysis/lasso-logistics-analysis`
+- `latex-manuscript-format-converter` ← `awesome-med-research-skills/Academic Writing/latex-manuscript-format-converter`
+- `latex-posters` ← `scientific-skills/Academic Writing/latex-posters`
+- `lay-press-release-writer` ← `scientific-skills/Academic Writing/lay-press-release-writer`
+- `lay-summary-for-cross-disciplinary-teams` ← `awesome-med-research-skills/Academic Writing/lay-summary-for-cross-disciplinary-teams`
+- `lay-summary-gen` ← `scientific-skills/Academic Writing/lay-summary-gen`
+- `learning-tutoring` ← `scientific-skills/Other/learning-tutoring`
+- `lightgbm-analysis` ← `awesome-med-research-skills/Data Analysis/LightGBM-analysis`
+- `limitation-and-risk-writer` ← `awesome-med-research-skills/Academic Writing/limitation-and-risk-writer`
+- `linkedin-optimizer` ← `scientific-skills/Academic Writing/linkedin-optimizer`
+- `lipinski-rule-filter` ← `scientific-skills/Data Analysis/lipinski-rule-filter`
+- `litbase` ← `awesome-med-research-skills/Evidence Insight/litbase`
+- `literature-close-read` ← `scientific-skills/Evidence Insight/literature-close-read`
+- `literature-experiment-extract` ← `scientific-skills/Evidence Insight/literature-experiment-extract`
+- `literature-extensive-read` ← `scientific-skills/Evidence Insight/literature-extensive-read`
+- `literature-filtering` ← `scientific-skills/Evidence Insight/literature-filtering`
+- `literature-management` ← `scientific-skills/Other/literature-management`
+- `literature-statistics` ← `scientific-skills/Other/literature-statistics`
+- `literatureimages-interpretation` ← `scientific-skills/Other/literatureimages-interpretation`
+- `lncrna-regulatory-network-construction-analysis` ← `awesome-med-research-skills/Data Analysis/lncrna-regulatory-network-construction-analysis`
+- `market-access-value` ← `scientific-skills/Academic Writing/market-access-value`
+- `market-research-report-generator` ← `scientific-skills/Other/market-research-report-generator`
+- `markitdown` ← `scientific-skills/Other/markitdown`
+- `matchms` ← `scientific-skills/Data Analysis/matchms`
+- `matplotlib` ← `scientific-skills/Data Analysis/matplotlib`
+- `mechanism-flowchart` ← `scientific-skills/Data Analysis/mechanism-flowchart`
+- `mechanism-to-validation-planner` ← `awesome-med-research-skills/Protocol Design/mechanism-to-validation-planner`
+- `medchem` ← `scientific-skills/Evidence Insight/medchem`
+- `medical-case-interpreter` ← `scientific-skills/Other/medical-case-interpreter`
+- `medical-case-report-generator` ← `scientific-skills/Other/medical-case-report-generator`
+- `medical-cv-resume-builder` ← `scientific-skills/Academic Writing/medical-cv-resume-builder`
+- `medical-device-mdr-auditor` ← `scientific-skills/Academic Writing/medical-device-mdr-auditor`
+- `medical-email-polisher` ← `scientific-skills/Academic Writing/medical-email-polisher`
+- `medical-english-precision-editor` ← `awesome-med-research-skills/Academic Writing/medical-english-precision-editor`
+- `medical-imaging-review` ← `scientific-skills/Academic Writing/medical-imaging-review`
+- `medical-research-algorithm-matcher` ← `awesome-med-research-skills/Protocol Design/medical-research-algorithm-matcher`
+- `medical-research-gap-finder` ← `awesome-med-research-skills/Evidence Insight/medical-research-gap-finder`
+- `medical-research-gap-to-study-planner` ← `awesome-med-research-skills/Protocol Design/medical-research-gap-to-study-planner`
+- `medical-research-literature-reader-pro` ← `awesome-med-research-skills/Evidence Insight/medical-research-literature-reader-pro`
+- `medical-research-skills-cover-letter-drafter` ← `awesome-med-research-skills/Academic Writing/cover-letter-drafter`
+- `medical-research-skills-diagnostic-study-quality-assessment-quadas-2` ← `scientific-skills/Evidence Insight/diagnostic-study-quality-assessment-quadas-2`
+- `medical-research-skills-literature-review` ← `scientific-skills/Academic Writing/literature-review`
+- `medical-research-skills-rct-bias-assessment-rob2` ← `scientific-skills/Evidence Insight/rct-bias-assessment-rob2`
+- `medical-research-skills-scvi-tools` ← `scientific-skills/Data Analysis/scvi-tools`
+- `medical-review-writer-architect` ← `scientific-skills/Academic Writing/medical-review-writer-architect`
+- `medical-scribe-dictation` ← `scientific-skills/Academic Writing/medical-scribe-dictation`
+- `medical-topic-saturation-and-whitespace-checker` ← `awesome-med-research-skills/Evidence Insight/medical-topic-saturation-and-whitespace-checker`
+- `medical-translation` ← `scientific-skills/Academic Writing/medical-translation`
+- `medical-unit-converter` ← `scientific-skills/Other/medical-unit-converter`
+- `medical-vector-search` ← `scientific-skills/Evidence Insight/medical-vector-search`
+- `medication-adherence-message-gen` ← `scientific-skills/Academic Writing/medication-adherence-message-gen`
+- `medication-reconciliation` ← `scientific-skills/Other/medication-reconciliation`
+- `meeting-assistant` ← `scientific-skills/Other/meeting-assistant`
+- `meeting-minutes` ← `scientific-skills/Academic Writing/meeting-minutes`
+- `meeting-minutes-generator` ← `scientific-skills/Other/meeting-minutes-generator`
+- `mendel` ← `awesome-med-research-skills/Other/mendel`
+- `mendelian-randomisation` ← `scientific-skills/Data Analysis/mendelian-randomisation`
+- `mendelian-randomization-protocol-designer` ← `awesome-med-research-skills/Protocol Design/mendelian-randomization-protocol-designer`
+- `meta-abstract-screener` ← `scientific-skills/Data Analysis/meta-abstract-screener`
+- `meta-analysis` ← `scientific-skills/Data Analysis/meta-analysis`
+- `meta-analysis-methods-generator` ← `scientific-skills/Academic Writing/meta-analysis-methods-generator`
+- `meta-baseline-generator` ← `scientific-skills/Academic Writing/meta-baseline-generator`
+- `meta-baujat-plot` ← `scientific-skills/Data Analysis/meta-baujat-plot`
+- `meta-criteria-generator` ← `scientific-skills/Data Analysis/meta-criteria-generator`
+- `meta-feasibility-analyzer` ← `scientific-skills/Data Analysis/meta-feasibility-analyzer`
+- `meta-forest-binary-plot` ← `scientific-skills/Data Analysis/meta-forest-binary-plot`
+- `meta-forest-continuous-plot` ← `scientific-skills/Data Analysis/meta-forest-continuous-plot`
+- `meta-forest-model-plot` ← `scientific-skills/Data Analysis/meta-forest-model-plot`
+- `meta-funnel-plot` ← `scientific-skills/Data Analysis/meta-funnel-plot`
+- `meta-manuscript-generator` ← `scientific-skills/Academic Writing/meta-manuscript-generator`
+- `meta-picos-generator` ← `scientific-skills/Data Analysis/meta-picos-generator`
+- `meta-protocol-writer` ← `scientific-skills/Protocol Design/meta-protocol-writer`
+- `meta-radial-plot` ← `scientific-skills/Data Analysis/meta-radial-plot`
+- `meta-results-forest-plot-analyzer` ← `scientific-skills/Academic Writing/meta-results-forest-plot-analyzer`
+- `meta-results-funnel-plot-generator` ← `scientific-skills/Academic Writing/meta-results-funnel-plot-generator`
+- `meta-results-risk-of-bias` ← `scientific-skills/Academic Writing/meta-results-risk-of-bias`
+- `meta-results-sensitivity-analysis` ← `scientific-skills/Academic Writing/meta-results-sensitivity-analysis`
+- `meta-rob2-plot` ← `scientific-skills/Data Analysis/meta-rob2-plot`
+- `meta-screening-fulltext` ← `scientific-skills/Data Analysis/meta-screening-fulltext`
+- `meta-search-builder` ← `scientific-skills/Other/meta-search-builder`
+- `meta-sensitivity-plot` ← `scientific-skills/Data Analysis/meta-sensitivity-plot`
+- `meta-title-generator` ← `scientific-skills/Data Analysis/meta-title-generator`
+- `metabolomics-workbench-database` ← `scientific-skills/Data Analysis/metabolomics-workbench-database`
+- `metagenomic-krona-chart` ← `scientific-skills/Data Analysis/metagenomic-krona-chart`
+- `method-gap-detector` ← `awesome-med-research-skills/Evidence Insight/method-gap-detector`
+- `method-writing` ← `scientific-skills/Academic Writing/method-writing`
+- `methodology-extractor` ← `scientific-skills/Evidence Insight/methodology-extractor`
+- `methods-reverse-engineer` ← `awesome-med-research-skills/Evidence Insight/methods-reverse-engineer`
+- `methods-section-writer` ← `awesome-med-research-skills/Academic Writing/methods-section-writer`
+- `microbiome-diversity-reporter` ← `scientific-skills/Academic Writing/microbiome-diversity-reporter`
+- `microscopy-scale-bar-adder` ← `scientific-skills/Other/microscopy-scale-bar-adder`
+- `mindmap` ← `scientific-skills/Other/mindmap`
+- `mindmap-helper` ← `scientific-skills/Other/mindmap-helper`
+- `mindmap-html-generator` ← `scientific-skills/Other/mindmap-html-generator`
+- `moa-explainer` ← `scientific-skills/Academic Writing/moa-explainer`
+- `model-calibration-curve` ← `awesome-med-research-skills/Data Analysis/model-calibration-curve`
+- `molecular-review-workflow` ← `scientific-skills/Academic Writing/molecular-review-workflow`
+- `motif-logo-generator` ← `scientific-skills/Data Analysis/motif-logo-generator`
+- `mr-scrna-research-planner` ← `awesome-med-research-skills/Protocol Design/mr-scrna-research-planner`
+- `multi-database-literature-collector` ← `awesome-med-research-skills/Evidence Insight/multi-database-literature-collector`
+- `multi-omics-clinical-integration-planner` ← `awesome-med-research-skills/Protocol Design/multi-omics-clinical-integration-planner`
+- `multi-panel-figure-assembler` ← `scientific-skills/Other/multi-panel-figure-assembler`
+- `multi-source-news-writer` ← `scientific-skills/Other/multi-source-news-writer`
+- `neoantigen-predictor` ← `scientific-skills/Data Analysis/neoantigen-predictor`
+- `network-tox-docking-research-planner` ← `scientific-skills/Protocol Design/network-tox-docking-research-planner`
+- `networking-email-drafter` ← `scientific-skills/Academic Writing/networking-email-drafter`
+- `neurokit2` ← `scientific-skills/Data Analysis/neurokit2`
+- `neuropixels-analysis` ← `scientific-skills/Data Analysis/neuropixels-analysis`
+- `nhanes-clinical-retrospective-biomarker-research-planner` ← `awesome-med-research-skills/Protocol Design/nhanes-clinical-retrospective-biomarker-research-planner`
+- `nih-biosketch-builder` ← `scientific-skills/Academic Writing/nih-biosketch-builder`
+- `nomogram-construction` ← `awesome-med-research-skills/Data Analysis/nomogram-construction`
+- `non-tumor-mechanism-guided-diagnostic-ml-research-planner` ← `awesome-med-research-skills/Protocol Design/non-tumor-mechanism-guided-diagnostic-ml-research-planner`
+- `non-tumor-ml-research-planner` ← `scientific-skills/Protocol Design/non-tumor-ml-research-planner`
+- `note-summarizer` ← `scientific-skills/Other/note-summarizer`
+- `novelty-vs-feasibility-assessor` ← `awesome-med-research-skills/Evidence Insight/novelty-vs-feasibility-assessor`
+- `nsfc-grant-writer` ← `scientific-skills/Academic Writing/nsfc-grant-writer`
+- `open-access-scout` ← `scientific-skills/Evidence Insight/open-access-scout`
+- `open-source-license-check` ← `scientific-skills/Evidence Insight/open-source-license-check`
+- `open-targets-db` ← `scientific-skills/Evidence Insight/open-targets-db`
+- `openalex-db` ← `scientific-skills/Evidence Insight/openalex-db`
+- `outcome-extraction-for-clinical-trials` ← `scientific-skills/Data Analysis/outcome-extraction-for-clinical-trials`
+- `outlier-detection-handler` ← `scientific-skills/Data Analysis/outlier-detection-handler`
+- `paper-2-web` ← `scientific-skills/Academic Writing/paper-2-web`
+- `paper-lookup` ← `scientific-skills/Evidence Insight/paper-lookup`
+- `paper-sprint-review` ← `awesome-med-research-skills/Academic Writing/paper-sprint-review`
+- `paper-to-claim-verifier` ← `awesome-med-research-skills/Evidence Insight/paper-to-claim-verifier`
+- `paper-tweet-generator` ← `scientific-skills/Other/paper-tweet-generator`
+- `patent-assistant` ← `scientific-skills/Academic Writing/patent-assistant`
+- `patent-claim-mapper` ← `scientific-skills/Evidence Insight/patent-claim-mapper`
+- `patent-landscape` ← `scientific-skills/Evidence Insight/patent-landscape`
+- `pathml` ← `scientific-skills/Data Analysis/pathml`
+- `pathology-roi-selector` ← `scientific-skills/Data Analysis/pathology-roi-selector`
+- `pathway-introduction-expert` ← `scientific-skills/Evidence Insight/pathway-introduction-expert`
+- `patient-consent-simplifier` ← `scientific-skills/Other/patient-consent-simplifier`
+- `patient-recruitment-ad-gen` ← `scientific-skills/Academic Writing/patient-recruitment-ad-gen`
+- `pca-dimensionality-reduction` ← `awesome-med-research-skills/Data Analysis/pca-dimensionality-reduction`
+- `pcd-immune-oncology-research-planner` ← `awesome-med-research-skills/Protocol Design/pcd-immune-oncology-research-planner`
+- `pdb-database` ← `scientific-skills/Evidence Insight/pdb-database`
+- `pdf-extract` ← `scientific-skills/Other/pdf-extract`
+- `pdf-extract-experimental-materials` ← `scientific-skills/Evidence Insight/pdf-extract-experimental-materials`
+- `pdf-ppt` ← `scientific-skills/Other/pdf-ppt`
+- `pdf-processor` ← `scientific-skills/Other/pdf-processor`
+- `pdf-to-ppt-pack` ← `scientific-skills/Other/pdf-to-ppt-pack`
+- `peer-review` ← `scientific-skills/Academic Writing/peer-review`
+- `peer-review-response-drafter` ← `scientific-skills/Academic Writing/peer-review-response-drafter`
+- `personal-statement` ← `scientific-skills/Academic Writing/personal-statement`
+- `phenotype-introduction` ← `scientific-skills/Evidence Insight/phenotype-introduction`
+- `phi-prompt-guard` ← `scientific-skills/Other/phi-prompt-guard`
+- `phylogenetic-tree-styler` ← `scientific-skills/Data Analysis/phylogenetic-tree-styler`
+- `plan-generator` ← `scientific-skills/Other/plan-generator`
+- `plotly` ← `scientific-skills/Other/plotly`
+- `pmc-official-download` ← `scientific-skills/Evidence Insight/pmc-official-download`
+- `population-gap-detector` ← `awesome-med-research-skills/Evidence Insight/population-gap-detector`
+- `postdoc-fellowship-matcher` ← `scientific-skills/Other/postdoc-fellowship-matcher`
+- `poster-designer` ← `scientific-skills/Other/poster-designer`
+- `poster-layout-planner` ← `scientific-skills/Academic Writing/poster-layout-planner`
+- `poster-storyline-builder` ← `awesome-med-research-skills/Academic Writing/poster-storyline-builder`
+- `ppi-network-analysis` ← `awesome-med-research-skills/Data Analysis/ppi-network-analysis`
+- `ppt` ← `scientific-skills/Other/ppt`
+- `ppt-master` ← `scientific-skills/Other/ppt-master`
+- `pptx-posters` ← `scientific-skills/Other/pptx-posters`
+- `pptx-skill` ← `scientific-skills/Other/PPTX-Skill`
+- `preclinical-pkpd-analyst` ← `scientific-skills/Data Analysis/preclinical-pkpd-analyst`
+- `preprint-surveillance-finder` ← `awesome-med-research-skills/Evidence Insight/preprint-surveillance-finder`
+- `presentation-hook` ← `scientific-skills/Academic Writing/presentation-hook`
+- `primary-plan-recommender` ← `awesome-med-research-skills/Protocol Design/primary-plan-recommender`
+- `prior-auth-letter-drafter` ← `scientific-skills/Academic Writing/prior-auth-letter-drafter`
+- `probast-quality-assessment-for-prediction-model-studies` ← `scientific-skills/Data Analysis/probast-quality-assessment-for-prediction-model-studies`
+- `process-related-diagnostic-biomarker-nomogram-research-planner` ← `awesome-med-research-skills/Protocol Design/process-related-diagnostic-biomarker-nomogram-research-planner`
+- `prognostic-biomarker-protocol-designer` ← `awesome-med-research-skills/Protocol Design/prognostic-biomarker-protocol-designer`
+- `prospero-registration-helper` ← `scientific-skills/Protocol Design/prospero-registration-helper`
+- `protocol-deviation-classifier` ← `scientific-skills/Data Analysis/protocol-deviation-classifier`
+- `protocol-standardization` ← `scientific-skills/Protocol Design/protocol-standardization`
+- `pseudotime-trajectory-viz` ← `scientific-skills/Data Analysis/pseudotime-trajectory-viz`
+- `pubchem-database-skill` ← `scientific-skills/Evidence Insight/pubchem-database-skill`
+- `pubmed-database` ← `scientific-skills/Evidence Insight/pubmed-database`
+- `pubmed-search-specialist` ← `scientific-skills/Evidence Insight/pubmed-search-specialist`
+- `pubmed-topic-recommend` ← `scientific-skills/Evidence Insight/pubmed-topic-recommend`
+- `pydeseq2` ← `scientific-skills/Data Analysis/pydeseq2`
+- `pydicom` ← `scientific-skills/Data Analysis/pydicom`
+- `pyhealth` ← `scientific-skills/Data Analysis/pyhealth`
+- `pyopenms-skill` ← `scientific-skills/Data Analysis/pyopenms-skill`
+- `pysam` ← `scientific-skills/Data Analysis/pysam`
+- `pytdc` ← `scientific-skills/Evidence Insight/pytdc`
+- `q-and-a-prep-partner` ← `scientific-skills/Academic Writing/q-and-a-prep-partner`
+- `qtl-colocalization-study-planner` ← `awesome-med-research-skills/Protocol Design/qtl-colocalization-study-planner`
+- `quadas-c-assessment-for-diagnostic-accuracy-studies` ← `scientific-skills/Data Analysis/quadas-c-assessment-for-diagnostic-accuracy-studies`
+- `quality-assessment` ← `scientific-skills/Data Analysis/quality-assessment`
+- `quapas-quality-assessment-for-prognosis-studies` ← `scientific-skills/Data Analysis/quapas-quality-assessment-for-prognosis-studies`
+- `radiology-image-quiz` ← `scientific-skills/Academic Writing/radiology-image-quiz`
+- `randomization-gen` ← `scientific-skills/Protocol Design/randomization-gen`
+- `rare-disease-hpo-mapper` ← `scientific-skills/Evidence Insight/rare-disease-hpo-mapper`
+- `rct-bias-assessment-rob2` ← `scientific-skills/Data Analysis/rct-bias-assessment-rob2`
+- `reactome-skill` ← `scientific-skills/Evidence Insight/reactome-skill`
+- `reagent-expiry-alert` ← `scientific-skills/Other/reagent-expiry-alert`
+- `reagent-substitute-scout` ← `scientific-skills/Evidence Insight/reagent-substitute-scout`
+- `real-world-evidence-study-designer` ← `awesome-med-research-skills/Protocol Design/real-world-evidence-study-designer`
+- `rebuttal-letter-strategist` ← `scientific-skills/Academic Writing/rebuttal-letter-strategist`
+- `recommendation-letter-assistant` ← `scientific-skills/Academic Writing/recommendation-letter-assistant`
+- `reference-finder` ← `scientific-skills/Evidence Insight/reference-finder`
+- `reference-integrity-checker` ← `awesome-med-research-skills/Academic Writing/reference-integrity-checker`
+- `reference-retrieval-skill` ← `scientific-skills/Evidence Insight/reference-retrieval-skill`
+- `reference-search` ← `scientific-skills/Evidence Insight/reference-search`
+- `reference-style-sync` ← `scientific-skills/Academic Writing/reference-style-sync`
+- `referral-letter-generator` ← `scientific-skills/Academic Writing/referral-letter-generator`
+- `regulatory-submission` ← `scientific-skills/Academic Writing/regulatory-submission`
+- `reporting-guideline-compliance-checker` ← `awesome-med-research-skills/Academic Writing/reporting-guideline-compliance-checker`
+- `reproducibility-check` ← `scientific-skills/Other/reproducibility-check`
+- `research-article-weekly` ← `scientific-skills/Evidence Insight/research-article-weekly`
+- `research-grants` ← `scientific-skills/Protocol Design/research-grants`
+- `research-hotspot-analysis` ← `scientific-skills/Evidence Insight/research-hotspot-analysis`
+- `research-paper-downloader` ← `scientific-skills/Evidence Insight/research-paper-downloader`
+- `research-proposal-generator` ← `scientific-skills/Protocol Design/research-proposal-generator`
+- `residency-interview-prep` ← `scientific-skills/Academic Writing/residency-interview-prep`
+- `response-letter` ← `scientific-skills/Academic Writing/response-letter`
+- `response-tone-polisher` ← `scientific-skills/Academic Writing/response-tone-polisher`
+- `resubmission-deadline-tracker` ← `scientific-skills/Other/resubmission-deadline-tracker`
+- `result-figure-consistencycheck` ← `scientific-skills/Other/result-figure-consistencycheck`
+- `result-reliability-checker` ← `awesome-med-research-skills/Evidence Insight/result-reliability-checker`
+- `results-section-structurer` ← `awesome-med-research-skills/Academic Writing/results-section-structurer`
+- `results-section-writer` ← `awesome-med-research-skills/Academic Writing/results-section-writer`
+- `retraction-watcher` ← `scientific-skills/Evidence Insight/retraction-watcher`
+- `revision-strategy-planner` ← `awesome-med-research-skills/Academic Writing/revision-strategy-planner`
+- `rf-model-importance-analysis` ← `awesome-med-research-skills/Data Analysis/rf-model-importance-analysis`
+- `roc-diagnostic-performance` ← `awesome-med-research-skills/Data Analysis/roc-diagnostic-performance`
+- `rowan` ← `scientific-skills/Data Analysis/rowan`
+- `sample-correlation-analysis` ← `awesome-med-research-skills/Data Analysis/sample-correlation-analysis`
+- `sample-group-sankey-plot` ← `awesome-med-research-skills/Data Analysis/sample-group-sankey-plot`
+- `sample-size-and-power-planning-assistant` ← `awesome-med-research-skills/Protocol Design/sample-size-and-power-planning-assistant`
+- `sample-size-basic` ← `scientific-skills/Protocol Design/sample-size-basic`
+- `sample-size-power-calculator` ← `scientific-skills/Academic Writing/sample-size-power-calculator`
+- `sanger-chromatogram-qa` ← `scientific-skills/Data Analysis/sanger-chromatogram-qa`
+- `scanpy` ← `scientific-skills/Data Analysis/scanpy`
+- `schedule-management` ← `scientific-skills/Other/schedule-management`
+- `scholar-evaluation` ← `scientific-skills/Evidence Insight/scholar-evaluation`
+- `sci-paper-reviewer` ← `scientific-skills/Other/sci-paper-reviewer`
+- `science-popularization-article` ← `scientific-skills/Other/science-popularization-article`
+- `scientific-critical-thinking` ← `scientific-skills/Evidence Insight/scientific-critical-thinking`
+- `scientific-podcast-summary` ← `scientific-skills/Evidence Insight/scientific-podcast-summary`
+- `scientific-schematics` ← `scientific-skills/Other/scientific-schematics`
+- `scikit-bio` ← `scientific-skills/Data Analysis/scikit-bio`
+- `scikit-survival` ← `scientific-skills/Data Analysis/scikit-survival`
+- `scite-database` ← `scientific-skills/Evidence Insight/scite-database`
+- `scrna-cell-type-annotator` ← `scientific-skills/Data Analysis/scrna-cell-type-annotator`
+- `sds-msds-risk-scanner` ← `scientific-skills/Evidence Insight/sds-msds-risk-scanner`
+- `seaborn` ← `scientific-skills/Data Analysis/seaborn`
+- `search-pubmed` ← `scientific-skills/Other/search-pubmed`
+- `semantic-consistency-auditor` ← `scientific-skills/Academic Writing/semantic-consistency-auditor`
+- `semantic-scholar-database` ← `scientific-skills/Evidence Insight/semantic-scholar-database`
+- `sequence-alignment` ← `scientific-skills/Data Analysis/sequence-alignment`
+- `shap` ← `scientific-skills/Data Analysis/shap`
+- `shift-handover-summarizer` ← `scientific-skills/Other/shift-handover-summarizer`
+- `short-video-script-generator` ← `scientific-skills/Other/short-video-script-generator`
+- `single-cell-research-planner` ← `awesome-med-research-skills/Protocol Design/single-cell-research-planner`
+- `single-compound-network-toxicology-disease-link-reference-grounded` ← `awesome-med-research-skills/Protocol Design/single-compound-network-toxicology-disease-link-reference-grounded`
+- `single-drug-adverse-effect-hub-first-network-pharmacology` ← `awesome-med-research-skills/Protocol Design/single-drug-adverse-effect-hub-first-network-pharmacology`
+- `single-drug-adverse-effect-pathway-anchored-network-pharmacology` ← `awesome-med-research-skills/Protocol Design/single-drug-adverse-effect-pathway-anchored-network-pharmacology`
+- `single-drug-faers-safety-profile-research-planner` ← `awesome-med-research-skills/Protocol Design/single-drug-faers-safety-profile-research-planner`
+- `single-gene-oncology-reference-grounded-research-planner` ← `awesome-med-research-skills/Protocol Design/single-gene-oncology-reference-grounded-research-planner`
+- `singlecell-portal` ← `scientific-skills/Data Analysis/singlecell-portal`
+- `skill-auditor` ← `skill-auditor`
+- `slide-deck-for-lab-meeting` ← `awesome-med-research-skills/Academic Writing/slide-deck-for-lab-meeting`
+- `slide-deck-images` ← `scientific-skills/Other/slide-deck-images`
+- `smart-journal-monitor` ← `scientific-skills/Evidence Insight/smart-journal-monitor`
+- `smiles-de-salter` ← `scientific-skills/Data Analysis/smiles-de-salter`
+- `soft-article-writer` ← `scientific-skills/Other/soft-article-writer`
+- `sop-writer` ← `scientific-skills/Protocol Design/sop-writer`
+- `spatial-transcriptomics-mapper` ← `scientific-skills/Data Analysis/spatial-transcriptomics-mapper`
+- `spreadsheet-ops` ← `scientific-skills/Other/spreadsheet-ops`
+- `ssgsea-immune-infiltration-analysis` ← `awesome-med-research-skills/Data Analysis/ssgsea-immune-infiltration-analysis`
+- `statistical-analysis` ← `scientific-skills/Data Analysis/statistical-analysis`
+- `statistical-analysis-advisor` ← `scientific-skills/Data Analysis/statistical-analysis-advisor`
+- `string-database` ← `scientific-skills/Evidence Insight/string-database`
+- `study-design-identifier` ← `awesome-med-research-skills/Evidence Insight/study-design-identifier`
+- `study-design-scale-selector` ← `scientific-skills/Data Analysis/study-design-scale-selector`
+- `study-limitations-drafter` ← `scientific-skills/Academic Writing/study-limitations-drafter`
+- `study-objective-refiner` ← `awesome-med-research-skills/Protocol Design/study-objective-refiner`
+- `style-journal-rewrite` ← `scientific-skills/Academic Writing/style-journal-rewrite`
+- `survival-analysis-km` ← `scientific-skills/Data Analysis/survival-analysis-km`
+- `survival-curve-risk-table` ← `scientific-skills/Data Analysis/survival-curve-risk-table`
+- `svm-model-importance-analysis` ← `awesome-med-research-skills/Data Analysis/svm-model-importance-analysis`
+- `symptom-checker-triage` ← `scientific-skills/Other/symptom-checker-triage`
+- `systematic-review` ← `scientific-skills/Academic Writing/systematic-review`
+- `systematic-review-screener` ← `scientific-skills/Evidence Insight/systematic-review-screener`
+- `table-1-generator` ← `scientific-skills/Data Analysis/table-1-generator`
+- `table-1-generator-advanced` ← `scientific-skills/Data Analysis/table-1-generator-advanced`
+- `table-narrative-writer` ← `awesome-med-research-skills/Academic Writing/table-narrative-writer`
+- `target-journal-matcher` ← `awesome-med-research-skills/Academic Writing/target-journal-matcher`
+- `target-novelty-scorer` ← `scientific-skills/Evidence Insight/target-novelty-scorer`
+- `task-reminder` ← `scientific-skills/Other/task-reminder`
+- `text-format-organizer` ← `scientific-skills/Other/text-format-organizer`
+- `text-to-technical-roadmap` ← `scientific-skills/Other/text-to-technical-roadmap`
+- `tf-target-gene-regulatory-network` ← `awesome-med-research-skills/Data Analysis/tf-target-gene-regulatory-network`
+- `time-dependent-roc` ← `awesome-med-research-skills/Data Analysis/time-dependent-roc`
+- `time-zone-planner` ← `scientific-skills/Other/time-zone-planner`
+- `title-and-abstract-optimizer` ← `awesome-med-research-skills/Academic Writing/title-and-abstract-optimizer`
+- `tone-adjuster` ← `scientific-skills/Academic Writing/tone-adjuster`
+- `tooluniverse-clinical-trial-design` ← `scientific-skills/Protocol Design/tooluniverse-clinical-trial-design`
+- `tooluniverse-clinical-trial-matching` ← `scientific-skills/Evidence Insight/tooluniverse-clinical-trial-matching`
+- `tooluniverse-literature-deep-research` ← `scientific-skills/Evidence Insight/tooluniverse-literature-deep-research`
+- `tooluniverse-statistical-modeling` ← `scientific-skills/Data Analysis/tooluniverse-statistical-modeling`
+- `topic-evidence-mapper` ← `awesome-med-research-skills/Evidence Insight/topic-evidence-mapper`
+- `torchdrug-english` ← `scientific-skills/Data Analysis/TorchDrug-English`
+- `toxicity-structure-alert` ← `scientific-skills/Data Analysis/toxicity-structure-alert`
+- `translational-gap-analyzer` ← `scientific-skills/Evidence Insight/translational-gap-analyzer`
+- `translational-study-blueprint` ← `awesome-med-research-skills/Protocol Design/translational-study-blueprint`
+- `treatment-plans` ← `scientific-skills/Other/treatment-plans`
+- `treatment-response-predictor-planner` ← `awesome-med-research-skills/Protocol Design/treatment-response-predictor-planner`
+- `tumor-immune-infiltration-diagnostic-ml-research-planner` ← `awesome-med-research-skills/Protocol Design/tumor-immune-infiltration-diagnostic-ml-research-planner`
+- `two-sample-mr-exposure-screening-reference-grounded` ← `awesome-med-research-skills/Protocol Design/two-sample-mr-exposure-screening-reference-grounded`
+- `two-sample-mr-research-planner` ← `scientific-skills/Protocol Design/two-sample-mr-research-planner`
+- `umap-tsne-analysis` ← `awesome-med-research-skills/Data Analysis/umap-tsne-analysis`
+- `uniprot-database` ← `scientific-skills/Evidence Insight/uniprot-database`
+- `univariate-multivariable-cox-regression` ← `awesome-med-research-skills/Data Analysis/univariate-multivariable-cox-regression`
+- `unmet-clinical-need-extractor` ← `awesome-med-research-skills/Evidence Insight/unmet-clinical-need-extractor`
+- `unstructured-medical-text-miner` ← `scientific-skills/Evidence Insight/unstructured-medical-text-miner`
+- `upset-plot-converter` ← `scientific-skills/Data Analysis/upset-plot-converter`
+- `usmle-case-generator` ← `scientific-skills/Academic Writing/usmle-case-generator`
+- `uspto-database` ← `scientific-skills/Other/uspto-database`
+- `validation-strategy-designer` ← `awesome-med-research-skills/Protocol Design/validation-strategy-designer`
+- `variant-annotation` ← `scientific-skills/Evidence Insight/variant-annotation`
+- `variant-pathogenicity-predictor` ← `scientific-skills/Data Analysis/variant-pathogenicity-predictor`
+- `vector-text-fixer` ← `scientific-skills/Other/vector-text-fixer`
+- `venue-templates` ← `scientific-skills/Evidence Insight/venue-templates`
+- `virtual-patient-roleplay` ← `scientific-skills/Other/virtual-patient-roleplay`
+- `visual-content-desc` ← `scientific-skills/Academic Writing/visual-content-desc`
+- `volcano-plot-labeler` ← `scientific-skills/Data Analysis/volcano-plot-labeler`
+- `volcano-plot-script` ← `scientific-skills/Data Analysis/volcano-plot-script`
+- `waste-disposal-guide` ← `scientific-skills/Other/waste-disposal-guide`
+- `western-blot-quantifier` ← `scientific-skills/Data Analysis/western-blot-quantifier`
+- `wgcna-analysis` ← `awesome-med-research-skills/Data Analysis/wgcna-analysis`
+- `word-read-write` ← `scientific-skills/Other/word-read-write`
+- `xgboost-analysis` ← `awesome-med-research-skills/Data Analysis/XGBoost-analysis`
+- `zinc-database` ← `scientific-skills/Evidence Insight/zinc-database`
+
