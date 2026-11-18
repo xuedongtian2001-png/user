@@ -52,3 +52,18 @@ Sidewalk robots: Jennings & Figliozzi 2019; Hoffmann & Prause 2018; Pani et al. 
 Lemardelé et al. 2021; Srinivas et al. 2022; Engesser et al. 2023; Gehrke et al. 2023; Alverhed et al. 2024.
 Drones: Nisingizwe et al. 2022; Jeon et al. 2026; Raghunatha et al. 2023; Stolaroff et al. 2018; Rodrigues et al. 2022;
 Kellermann et al. 2020; Yoo et al. 2018; Smith et al. 2022.
+
+## Theory sources read in full (18 November 2026)
+
+Read from full-text copies and checked against every sentence that cites them:
+Blank (2013); Kaplan and Mikes (2012); Klein (2007); O'Reilly and Tushman (2004); Cooper (1990, pp. 44–53 of 44–54);
+Edmondson (1999); Holgersson et al. (2026, accepted manuscript); March (1991); Schein (1984); Stilgoe et al. (2013);
+Teece (2007).
+
+Read as publisher excerpts only: Belbin (2004, 2nd edn, preview to p. 11); Osterwalder et al. (2020, 46-page excerpt);
+Tidd and Bessant (2021, Chapter 1).
+
+Not opened: Moore (2014) and Vuori and Huy (2016). Both remain cited on the strength of the unit slides.
+
+Dropped from the report because they could not be opened or did not contain the cited idea:
+Brown (2009), Frazier et al. (2017), Kotter and Schlesinger (2008), Rogers (2003), Lemardelé et al. (2021).
