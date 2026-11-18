@@ -63,7 +63,10 @@ Teece (2007).
 Read as publisher excerpts only: Belbin (2004, 2nd edn, preview to p. 11); Osterwalder et al. (2020, 46-page excerpt);
 Tidd and Bessant (2021, Chapter 1).
 
-Not opened: Moore (2014) and Vuori and Huy (2016). Both remain cited on the strength of the unit slides.
+Also read in full from PDFs supplied later: Frazier et al. (2017); Kotter and Schlesinger (2008, HBR reprint);
+Vuori and Huy (2016); Rogers (2003, Chapter 1 as published on the publisher's website).
+
+Every reference now cited in the report has been read in full, or in the excerpt stated above.
 
 Dropped from the report because they could not be opened or did not contain the cited idea:
-Brown (2009), Frazier et al. (2017), Kotter and Schlesinger (2008), Rogers (2003), Lemardelé et al. (2021).
+Brown (2009), Moore (2014), Lemardelé et al. (2021).
