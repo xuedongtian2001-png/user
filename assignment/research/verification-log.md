@@ -35,7 +35,7 @@ Checked on 2026-11-18 by opening the original pages (or, for journal articles, t
 | FedEx hoped for commercial pilots with retailers by summer 2020 | FreightWaves, 7 Jan 2020 | Confirmed |
 | "COVID has accelerated the demand" (Brian Philips) | Supply Chain Dive, 30 Oct 2020 | Confirmed |
 | Japan, 7 Jul 2021: a "first appearance", with FedEx to "explore opportunities to test Roxo in the future" | FedEx newsroom release | Confirmed: an appearance, not a trial |
-| Cost programme of $2.2–2.7B for FY23 and about $4.0B by FY25 announced 22 Sep 2022 | FedEx Q1 FY23 results release | Confirmed. See note below on the name DRIVE |
+| Cost programme of $2.2–2.7B for FY23 and about $4.0B by FY25 announced 22 Sep 2022 | FedEx Q1 FY23 results release | Confirmed, but the release does not use the name DRIVE; that name appears in the October memo |
 | Internal memo: "Roxo did not meet necessary near-term value requirements for DRIVE"; R&D efforts ended | Robotics 24/7 (Cesareo Contreras), 7 Oct 2022 | Confirmed |
 | "Canceled Roxo to 'prioritize several nearer term opportunities'"; "You need a lot of scale and you need a lot of density" | Supply Chain Dive (Max Garland), 12 Apr 2023 | Confirmed |
 | Amazon ended Scout field tests the same week; about 400 people worked on it | TechCrunch, 7 Oct 2022 | Confirmed |
