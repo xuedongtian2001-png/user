@@ -68,6 +68,9 @@ Week 1 slides and in the University of Bristol Library. The three passages were 
 Chapter 1 of the fifth edition (print layout): "only the first step ..." p. 18; "the process of turning ideas into
 reality and capturing value from them" p. 21; the 3M box (a third of sales from products introduced in the past five
 years) p. 50. The wording of the two direct quotes is identical in the fifth and seventh editions.
+Belbin (2004, 2nd edn) p. 10 was confirmed on the publisher's preview (title page, copyright page and page 10: "Of
+twenty-five companies which we constructed according to our Apollo design only three became the winning team"); the
+University of Bristol Library holds this edition in print only.
 Osterwalder et al. (2020) pp. 17 and 19 were confirmed on the Library's ProQuest e-book, and Rogers (2003) pp. 7 and 16
 in the Google Books preview (p. 7 from the search snippet of the sentence that follows the quoted one in the same paragraph).
 
