@@ -85,4 +85,5 @@ Brown (2009), Moore (2014), Lemardelé et al. (2021).
 Update, 20 November 2026 (journal links): Holgersson et al. (2026) volume, issue, pages and DOI 10.1108/smr-03-2021-0843
 confirmed in the Crossref record. Kotter and Schlesinger (2008) confirmed on the Harvard Business Review page (July–August
 2008 issue). The Schein (1984) page on the MIT Sloan Management Review website was located by web search only; the site
-could not be opened from this environment, so the link should be opened once before submission.
+could not be opened from this environment. The author of the report opened the link on 20 November 2026 and confirmed
+that it loads.
