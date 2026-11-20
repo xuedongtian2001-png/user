@@ -87,3 +87,11 @@ confirmed in the Crossref record. Kotter and Schlesinger (2008) confirmed on the
 2008 issue). The Schein (1984) page on the MIT Sloan Management Review website was located by web search only; the site
 could not be opened from this environment. The author of the report opened the link on 20 November 2026 and confirmed
 that it loads.
+
+Update, 20 November 2026 (DOI test): https://doi.org/10.1108/smr-03-2021-0843 was opened from this environment. The DOI
+resolver redirects (HTTP 302) to https://www.emerald.com/smr/article/7/1/23/1383383/Closing-open-innovation, which matches
+the Crossref record (Strategic Management Review, 7(1), pp. 23-43, publisher Emerald). The Emerald page itself answers
+automated requests with a bot check, so its content was not read here. The text read for the report is the accepted
+manuscript on strategicmanagementreview.net, and the note under the reference now says so.
+Figures: both figures were redrawn 1100 px wide with larger type so that labels print at about 7 pt at A4 text width;
+the two November 2026 Zipline events in Figure 1 are now one marker.
