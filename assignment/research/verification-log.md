@@ -105,3 +105,7 @@ Audit against the brief, 21 November 2026 (Word version 10):
   use post-mortems); that note was reworded.
 - Word count: 3,814 for headings and paragraphs; 3,897 with figure and table captions; 4,211 with table contents.
   The brief refers to the CfIE handbook for what is counted; that page could not be opened from here.
+- 21 November 2026: the author opened eight journal articles through the University of Bristol Library and reported full
+  text for all of them: Blank (2013), Cooper (1990), Kaplan and Mikes (2012), Klein (2007), Kotter and Schlesinger (2008
+  reprint), March (1991) and O'Reilly and Tushman (2004) in Business Source Ultimate, and Schein (1984) in ProQuest
+  Periodicals Archive Online. The source notes for these eight now name the library route.
