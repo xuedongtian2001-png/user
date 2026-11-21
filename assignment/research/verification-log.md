@@ -95,3 +95,13 @@ automated requests with a bot check, so its content was not read here. The text 
 manuscript on strategicmanagementreview.net, and the note under the reference now says so.
 Figures: both figures were redrawn 1100 px wide with larger type so that labels print at about 7 pt at A4 text width;
 the two November 2026 Zipline events in Figure 1 are now one marker.
+
+Audit against the brief, 21 November 2026 (Word version 10):
+- Links: 23 of the 24 web addresses in the reference list opened with HTTP 200 and the expected page title; the Schein page
+  cannot be reached from this environment and was confirmed by the author. All 10 DOIs resolve at doi.org to the expected
+  publisher pages. Four books carry no link.
+- Course-week claims in the source notes were checked against the slide decks held here (Weeks 1, 2, 3, 4, 7, 8) and the
+  key-learnings document (Weeks 9, 10, 11). All were found except the premortem, which is not on the Week 3 slides (they
+  use post-mortems); that note was reworded.
+- Word count: 3,814 for headings and paragraphs; 3,897 with figure and table captions; 4,211 with table contents.
+  The brief refers to the CfIE handbook for what is counted; that page could not be opened from here.
