@@ -109,3 +109,6 @@ Audit against the brief, 21 November 2026 (Word version 10):
   text for all of them: Blank (2013), Cooper (1990), Kaplan and Mikes (2012), Klein (2007), Kotter and Schlesinger (2008
   reprint), March (1991) and O'Reilly and Tushman (2004) in Business Source Ultimate, and Schein (1984) in ProQuest
   Periodicals Archive Online. The source notes for these eight now name the library route.
+- 22 November 2026: the six journal articles without a DOI that were read through library databases (five Harvard
+  Business Review articles and Schein, 1984) are now referenced in print style, without a web address or access date.
+  Rule in the list: DOI where one exists; no link for database-read articles without a DOI.
